@@ -1,0 +1,28 @@
+.right-sidebar {
+    width: 20%;
+    background-color: #f0f2f5;
+    padding: 20px;
+    height: 100vh;
+  }
+  
+  .friend {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .friend button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4267b2;
+    color: white;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    .right-sidebar {
+      display: none; /* Ẩn Right Sidebar trên màn hình nhỏ */
+    }
+  }

@@ -1,0 +1,32 @@
+.layout {
+  display: flex;
+  flex: 1;
+  flex-wrap: nowrap; /* Sidebar luôn nằm trên cùng một hàng */
+}
+
+.sidebar {
+  flex-shrink: 0; /* Sidebar không co giãn mà giữ nguyên kích thước */
+}
+
+.dashboard ,.post-container{ 
+  flex: 1; /* Chiếm phần còn lại */
+  margin: 20px;
+}
+
+.right-sidebar {
+  flex-shrink: 0;
+  width: 20%;
+  transition: width 0.3s ease; /* Hiệu ứng thu nhỏ tương tự sidebar */
+}
+
+@media (max-width: 1024px) {
+  .right-sidebar {
+    width: 15%;
+  }
+}
+
+@media (max-width: 768px) {
+  .right-sidebar {
+    width: 10%;
+  }
+}

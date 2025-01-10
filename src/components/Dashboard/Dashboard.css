@@ -1,0 +1,25 @@
+.news-feed {
+    flex: 1;
+    padding: 20px;
+    background-color: #e9ecef;
+    overflow-y: auto;
+    display: flex; /* Sử dụng Flexbox */
+    flex-direction: column;
+    border-radius: 8px;
+
+  }
+  
+  .post {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 600px; 
+  }
+  
+  @media (max-width: 768px) {
+    .news-feed {
+      padding: 10px; /* Thu nhỏ khoảng cách khi màn hình hẹp */
+    }
+}
