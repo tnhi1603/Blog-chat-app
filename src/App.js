@@ -1,19 +1,14 @@
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar';
-import Sidebar from './components/Sidebar/Sidebar';
-import Dashboard from './components/Dashboard/Dashboard';
-import RightSidebar from './components/RightSidebar/RightSidebar';
+import AppRoutes from './routes/AppRoutes';
 
 const App = () => {
   return (
-    <div className="app">
+    <Router>
       <Navbar />
-      <div className="layout">
-        <Sidebar />
-        <Dashboard />
-        <RightSidebar />
-      </div>
-    </div>
+      <AppRoutes />
+    </Router>
   );
 };
 
