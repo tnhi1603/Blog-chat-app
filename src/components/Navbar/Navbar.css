@@ -1,25 +1,77 @@
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #ffffff;
-    color: #659DBD;
-    flex-wrap: wrap; /* Để các phần tử tự xuống dòng nếu quá hẹp */
-  }
-  
-  .logo {
-    font-size: 24px;
-    font-weight: bold;
-  }
-  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  color: #659DBD;
+  flex-wrap: wrap; /* Để các phần tử tự xuống dòng nếu quá hẹp */
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-icons {
+  display: flex;
+  gap: 25px;
+  font-size: 20px;
+}
+
+/* Loại bỏ hiệu ứng của Link */
+.nav-icons a, 
+.dropdown-content a {
+  text-decoration: none; /* Loại bỏ gạch chân */
+  color: inherit; /* Sử dụng màu chữ kế thừa */
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* Hover và focus không đổi màu */
+.nav-icons a:hover,
+.dropdown-content a:hover {
+  text-decoration: none; /* Không gạch chân */
+  color: inherit; /* Giữ màu không đổi */
+}
+
+.dropdown-menu {
+  position: relative;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  position: absolute;
+  right: 5px;
+  top: 40px;
+  background-color: #444;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-content a {
+  padding: 10px 15px;
+  color: #fff;
+}
+
+.dropdown-content a:hover {
+  background-color: #555; /* Chỉ thay đổi màu nền khi hover */
+}
+
+.nav-icons svg:active,
+.dropdown-content a svg:active {
+  color: #3d3466;
+}
+
+.dropdown-content svg {
+  margin-right: 10px;
+}
+
+@media (max-width: 768px) {
   .nav-icons span {
-    margin-left: 15px;
-    font-size: 20px;
-    cursor: pointer;
+    flex-wrap: wrap; /* Các icon tự xuống dòng nếu không đủ chỗ */
   }
-  @media (max-width: 768px) {
-    .nav-icons span {
-      flex-wrap: wrap; /* Các icon tự xuống dòng nếu không đủ chỗ */
-    }
-  }
+}
