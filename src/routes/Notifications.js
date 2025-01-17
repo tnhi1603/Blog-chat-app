@@ -1,7 +1,12 @@
 import React from 'react';
+import NotificationPage from '../components/Notification/NotificationPage/NotificationPage';
 
 const Notifications = () => {
-  return <h1>Notifications Page</h1>;
+  return (
+    <div>
+      <NotificationPage />
+    </div>
+  );
 };
 
 export default Notifications;
