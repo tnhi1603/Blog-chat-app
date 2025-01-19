@@ -1,0 +1,50 @@
+.chat-page {
+    display: flex;
+    height: 90vh;
+    overflow: hidden;
+  }
+  
+  .chat-list {
+    width: 30%;
+    overflow-y: auto;
+    background-color: #f9f9f9;
+    margin: 5px 5px;
+    margin-left: 20px;
+    border-radius: 1%;
+  }
+  
+  .message-section {
+    width: 70%;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9;
+    margin: 5px 5px;
+    border-radius: 1%;
+  }
+  
+  .select-chat-placeholder {
+    color: #999;
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  /* Toggle Button */
+  .toggle-chat-list {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 10;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .toggle-chat-list:hover {
+    background-color: #0056b3;
+  }
+  
