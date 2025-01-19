@@ -4,10 +4,6 @@
   flex-wrap: nowrap; /* Sidebar luôn nằm trên cùng một hàng */
 }
 
-.sidebar {
-  flex-shrink: 0; /* Sidebar không co giãn mà giữ nguyên kích thước */
-}
-
 .dashboard ,.post-container{ 
   flex: 1; /* Chiếm phần còn lại */
   margin: 20px;
