@@ -6,10 +6,12 @@ import Chat from './Chat';
 import Friends from './Friends';
 import Profile from './Profile';
 import Blog from './Blog';
+import Register from './Register';
 
 const AppRoutes = () => {
   return (
     <Routes>
+      <Route path="/register" element={<Register />} />
       <Route path="/home" element={<Home />} />
       <Route path="/notifications" element={<Notifications />} />
       <Route path="/chat" element={<Chat />} />

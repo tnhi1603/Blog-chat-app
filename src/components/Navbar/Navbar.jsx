@@ -9,7 +9,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobileView(window.innerWidth < 768); // Màn hình nhỏ nếu < 768px
+      setIsMobileView(window.innerWidth < 768); 
     };
 
     handleResize(); // Gọi khi render lần đầu
