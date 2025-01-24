@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaFacebook, FaWhatsapp, FaTelegram } from 'react-icons/fa'; // Import icons
 import './RegisterPage.css';
-import Image from '../../assets/register.png';
+import Image from '../../assets/register.gif';
 
 const Register = () => {
   return (
