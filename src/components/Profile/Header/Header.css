@@ -1,0 +1,63 @@
+.header-container {
+    position: relative;
+    height: 200px;
+    border-radius: 10px;
+  }
+  
+  .header-background {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 5px;
+    margin: 20px;
+  }
+  
+  .header-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .header-avatar {
+    position: absolute;
+    bottom: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .header-avatar img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid white;
+  }
+  
+  .header-info {
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  .header-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .btn-primary {
+    padding: 5px 10px;
+    background: #6c5ce7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn-secondary {
+    padding: 5px 10px;
+    background: #dfe6e9;
+    color: #2d3436;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  

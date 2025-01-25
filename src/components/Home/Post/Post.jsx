@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { FaImage } from 'react-icons/fa';
+import avt from '../../../assets/img.jpg';
 import './Post.css';
 
 const Post = ({ currentUserAvatar, onPostSubmit }) => {
@@ -27,7 +28,7 @@ const Post = ({ currentUserAvatar, onPostSubmit }) => {
   return (
     <div className="post-container">
       <div className="post-header">
-        <img src={currentUserAvatar} alt="User avatar" className="avatar" />
+        <img src={avt} alt="User avatar" className="avatar" />
         <textarea
           className="post-input"
           placeholder="What's on your mind?"
@@ -46,7 +47,7 @@ const Post = ({ currentUserAvatar, onPostSubmit }) => {
       </div>
       {image && (
         <div className="image-preview">
-          <img src={image} alt="Preview" />
+          <img src={avt} alt="Preview" />
         </div>
       )}
       <button className="post-button" onClick={handlePost} disabled={!content.trim() && !image}>
