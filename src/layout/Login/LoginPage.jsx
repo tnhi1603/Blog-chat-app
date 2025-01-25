@@ -6,9 +6,9 @@ import welcome from '../../assets/welcome.gif';
 
 const LoginPage = () => {
   return (
-    <div className="register-container">
+    <div className="login-container">
       <div class="background-accent"></div>
-      <div className="form-container">
+      <div className="form-container-login">
         <div className="welcome-gif">
           <img src={welcome} alt="Welcome Animation" />
         </div>
@@ -33,7 +33,7 @@ const LoginPage = () => {
           </a>
         </div>
       </div>
-      <div className="illustration">
+      <div className="illustration-login">
         <img src={Image} alt="Illustration" />
       </div>
     </div>
