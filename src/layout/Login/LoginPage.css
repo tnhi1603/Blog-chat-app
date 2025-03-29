@@ -161,3 +161,28 @@ form a {
     left: 60%;
   }
 }
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 20%;
+  transform: translateX(-50%);
+  background-color: rgba(40, 167, 69, 0.9); /* Màu xanh lá với độ mờ */
+  color: white;
+  padding: 15px 0;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 0 0 15px 15px; /* Bo góc dưới */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  animation: fadeInOut 2s ease-in-out;
+  z-index: 1000; /* Luôn hiển thị trên cùng */
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0; transform: translateY(-100%); }
+  20% { opacity: 1; transform: translateY(0); }
+  80% { opacity: 1; }
+  100% { opacity: 0; transform: translateY(-100%); }
+}
+

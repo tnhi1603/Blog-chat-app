@@ -2,19 +2,28 @@ import React from 'react';
 import { FaFacebook, FaWhatsapp, FaTelegram } from 'react-icons/fa'; // Import icons
 import './RegisterPage.css';
 import Image from '../../assets/register.gif';
+import { useState } from "react";
+import authApi from "../../api/authApi";
 
 const Register = () => {
+  const [user, setUser] = useState({ name: "", email: "", password: "" });
+    const handleSignup = async () => {
+        try {
+            const response = await authApi.signUp(user);
+            console.log("Đăng ký thành công:", response);
+        } catch (error) {
+            console.error("Đăng ký thất bại:", error);
+        }
+    };
   return (
     <div className="register-container">
       <div className="form-container">
         <h2>Please Fill out form to Register!</h2>
         <form>
-          <input type="text" placeholder="Full name" />
-          <input type="text" placeholder="Username" />
-          <input type="email" placeholder="Email" />
-          <input type="password" placeholder="Password" />
-          <input type="password" placeholder="Confirm Password" />
-          <button type="submit">Register</button>
+            <input type="text" placeholder="Name" onChange={(e) => setUser({ ...user, name: e.target.value })} />
+            <input type="email" placeholder="Email" onChange={(e) => setUser({ ...user, email: e.target.value })} />
+            <input type="password" placeholder="Password" onChange={(e) => setUser({ ...user, password: e.target.value })} />
+            <button onClick={handleSignup}>Đăng ký</button>
         </form>
         <p>
           Yes I have an account? <a href="/login">Login</a>
