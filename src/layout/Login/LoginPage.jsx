@@ -19,8 +19,8 @@ const LoginPage = () => {
             setShowPopup(true);
             setTimeout(() => {
               setShowPopup(false);
-              navigate("/"); // Chuyển sang trang Home
-            }, 2000);
+              navigate("/");
+            }, 1000);
         } catch (error) {
             console.error("Đăng nhập thất bại:", error);
         }
@@ -58,9 +58,12 @@ const LoginPage = () => {
         <img src={Image} alt="Illustration" />
       </div>
       {showPopup && (
+        <>
+        <div className="popup-overlay"></div>
         <div className="popup">
           <p>Đăng nhập thành công!</p>
         </div>
+        </>
       )}
     </div>
   );
