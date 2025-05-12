@@ -1,6 +1,6 @@
 import React from "react";
 import "./MessageCard.css";
-import avatarImage from "../../../assets/img.jpg";
+
 
 const MessageCard = ({ isSender, avatar, message, time }) => {
   return (
