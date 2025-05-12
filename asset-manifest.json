@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/Blog-chat-app/static/css/main.751f26ea.css",
+    "main.js": "/Blog-chat-app/static/js/main.7b437913.js",
+    "static/js/488.b76e036a.chunk.js": "/Blog-chat-app/static/js/488.b76e036a.chunk.js",
+    "static/media/register.gif": "/Blog-chat-app/static/media/register.fdd50f7ab0290d67dcb3.gif",
+    "static/media/img.jpg": "/Blog-chat-app/static/media/img.729a7cd0831cbaae67db.jpg",
+    "static/media/welcome.gif": "/Blog-chat-app/static/media/welcome.503ad3661029c3320f96.gif",
+    "static/media/login.png": "/Blog-chat-app/static/media/login.4c3a51b01d27cb9f979d.png",
+    "index.html": "/Blog-chat-app/index.html",
+    "main.751f26ea.css.map": "/Blog-chat-app/static/css/main.751f26ea.css.map",
+    "main.7b437913.js.map": "/Blog-chat-app/static/js/main.7b437913.js.map",
+    "488.b76e036a.chunk.js.map": "/Blog-chat-app/static/js/488.b76e036a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.751f26ea.css",
+    "static/js/main.7b437913.js"
+  ]
+}
