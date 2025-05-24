@@ -2,7 +2,6 @@ import React from 'react';
 import { FaFacebook, FaWhatsapp, FaTelegram } from 'react-icons/fa';
 import './LoginPage.css';
 import Image from '../../assets/login.png';
-import welcome from '../../assets/welcome.gif';
 import { useState } from "react";
 import authApi from "../../api/authApi";
 import { useNavigate } from "react-router-dom";
@@ -30,9 +29,6 @@ const LoginPage = () => {
     <div className="login-container">
       <div class="background-accent"></div>
       <div className="form-container-login">
-        <div className="welcome-gif">
-          <img src={welcome} alt="Welcome Animation" />
-        </div>
         <h2>Please Fill out form to Login</h2>
         <form>
           <input type="email" placeholder="Email" onChange={(e) => setUser({ ...user, email: e.target.value })} />
