@@ -23,7 +23,7 @@ const LoginPage = () => {
         } catch (error) {
             console.error("Đăng nhập thất bại:", error);
         }
-    };
+  };
 
   return (
     <div className="login-container">
